@@ -7,7 +7,7 @@ module.exports = {
 
     QUESTIONS_EN_GB: [
         {
-            '<audio src="https://s3.amazonaws.com/alexasoul/om.mp3"/>': [
+            'test': [
                 '13,000',
                 '1,200',
                 '5,000',
