@@ -215,7 +215,7 @@ function handleUserGuess(userGaveUp) {
     } else {
         currentQuestionIndex += 1;
         correctAnswerIndex = Math.floor(Math.random() * (ANSWER_COUNT));
-       const spokenQuestion = '<audio src="'+Object.keys(translatedQuestions[gameQuestions[currentQuestionIndex]])[0]+'" />';
+      const spokenQuestion = '<audio src="https://s3.amazonaws.com/alexasoul/'+Object.keys(translatedQuestions[gameQuestions[currentQuestionIndex]])[0]+'.mp3" />';
         const roundAnswers = populateRoundAnswers.call(this, gameQuestions, currentQuestionIndex, correctAnswerIndex, translatedQuestions);
         const questionIndexForSpeech = currentQuestionIndex + 1;
         let repromptText = this.t('TELL_QUESTION_MESSAGE', questionIndexForSpeech.toString(), spokenQuestion);
@@ -254,7 +254,7 @@ const startStateHandlers = Alexa.CreateStateHandler(GAME_STATES.START, {
         const roundAnswers = populateRoundAnswers(gameQuestions, 0, correctAnswerIndex, translatedQuestions);
         const currentQuestionIndex = 0;
       
-        const spokenQuestion = '<audio src="'+Object.keys(translatedQuestions[gameQuestions[currentQuestionIndex]])[0]+'" />';
+      const spokenQuestion = '<audio src="https://s3.amazonaws.com/alexasoul/'+Object.keys(translatedQuestions[gameQuestions[currentQuestionIndex]])[0]+'.mp3" />';
        
         let repromptText = this.t('TELL_QUESTION_MESSAGE', '1', spokenQuestion);
 //console.log(translatedQuestions);  
