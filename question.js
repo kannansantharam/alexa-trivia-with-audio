@@ -21,7 +21,7 @@ module.exports = {
    QUESTIONS_EN_US: [
         {
             
-           'https://s3.amazonaws.com/alexasoul/VICTORY_alexaConverted.mp3': [
+           'VICTORY_alexaConverted': [
                 '13,000',
                 '1,200',
                 '5,000',
@@ -32,7 +32,7 @@ module.exports = {
         },
         {
             
-           'https://s3.amazonaws.com/alexasoul/VICTORY_alexaConverted.mp3': [
+           'VICTORY_alexaConverted': [
                 '13,000',
                 '1,200',
                 '5,000',
@@ -43,7 +43,7 @@ module.exports = {
         },
         {
             
-           'https://s3.amazonaws.com/alexasoul/VICTORY_alexaConverted.mp3': [
+           'VICTORY_alexaConverted': [
                 '13,000',
                 '1,200',
                 '5,000',
